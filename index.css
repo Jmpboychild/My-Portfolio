@@ -1,0 +1,566 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: white;
+}
+
+body{
+    background-color: rgb(71, 71, 71);
+    color: white;
+    height: 100%;
+}
+
+header{
+    background-color: rgb(40, 39, 50);
+    display: block;
+    position: fixed;
+    width: 100%;
+    flex-direction: column;
+    border-radius: 30px;
+    box-shadow: rgb(49, 48, 48) 0 10px 8px;
+    margin: 10px 0 0 0;
+    height: 10%;
+    padding: 0 0 40px 0;
+    align-items: center;
+    top: 0;
+}
+
+header ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.profile-rgt img{
+    width: 90px;
+    border-radius: 50%;
+
+}
+
+.profile-rgt{
+    display: inline-flex;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    cursor: default;
+}
+
+.nav-cat{
+    display: inline-flex;
+    margin-right: 20px;
+}
+
+.nav-cat button{
+    display: none;
+}
+
+.nav-cat-smaller{
+    display: none;
+}
+
+.nav-cat li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 30px;
+}
+
+.nav-cat li a:hover{
+    background-color: rgb(46, 44, 55);
+    border-radius: 10px;
+    color: brown;
+}
+
+main{
+    height: 80%;
+    margin: 80px 0 0 0;
+}
+
+main .left-nav .side-nav{
+    float: right;
+    top: 0;
+    font-size: 25px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+main .left-nav .side-nav:hover{
+    background-color: rgba(0, 0, 0, 0.244);
+    border-radius: 0 10px 0 0;
+}
+
+main .left-nav h2{
+    padding: 15px;
+}
+
+main .left-nav{
+    background-color: rgb(40, 39, 50);
+    width: 170px;
+    max-width: 20%;
+    text-align: center;
+    list-style: none;
+    margin-top: 50px;
+    border-radius: 0 10px 0 0;
+    box-shadow: black 0 6px 15px;
+    display: none;
+    position: fixed;
+}
+
+main .left-nav hr{
+    width: 100%;
+    box-shadow: 0 2px 5px;
+}
+
+main .left-nav li{
+    text-align: left;
+    cursor: pointer;
+    left: 0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.left-nav li:hover{
+    background-color: rgb(40, 39, 50);
+    font-weight: bold;
+}
+
+.left-nav ul{
+    list-style: none;
+}
+
+.left-nav ul a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.left-nav ul a:hover{
+    color: brown;
+}
+
+
+
+.left-nav-hidden{
+    background-color: rgba(40, 39, 50, 0.643);
+    width: 40px;
+    min-width: 40px;
+    text-align: left;
+    list-style: none;
+    margin-top: 50px;
+    border-radius: 0 10px 0 0;
+    box-shadow: black 0 6px 15px;
+    height: 280px;
+    display: none;
+    position: fixed;
+}
+
+.left-nav-hidden ul{
+    align-items: center;
+}
+
+.left-nav-hidden ul li i{
+    position: absolute;
+    display: inline-block;
+    padding: 20px 7px;
+    font-size: 20px;
+    margin: 8px 0;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.left-nav-hidden ul h3{
+    position: relative;
+    margin-left: 50px;
+    z-index: 1;
+    background-color: whitesmoke;
+    color: black;
+    padding: 8px;
+    width: 110px;
+    border-radius: 10px;
+    text-align: center;
+    visibility: hidden
+}
+
+.left-nav-hidden ul i:hover{
+    background-color: rgb(39, 35, 35);
+    visibility: visible;
+}
+
+
+
+.left-nav-hidden .about{
+    padding: 15px 0;
+}
+
+.left-nav-hidden .about i{
+    position: relative;
+}
+
+.left-nav-hidden .about .open-about{
+    float: right;
+}
+
+/*Hidding side nav*/
+
+/*main content*/
+
+.main-content{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-direction: column;
+    width: 92%;
+    margin-left: 8%;
+}
+
+
+/*Topics section*/
+
+.topic-ctn{
+    background-color: rgb(46, 44, 55);
+    min-width: 85%;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 40px 0 0 40px;
+}
+
+.heroPage{
+    padding: 20px;
+    margin: 50px 0;
+}
+
+ .heroPage h2{
+    margin: 20px;
+    font-size: 20px;
+    color: rgb(123, 123, 123);
+ }
+
+ .heroPage h1{
+    color: rgb(0, 171, 171);
+ }
+
+ .heroPage .name{
+    background-color: rgb(40, 39, 50);
+    padding: 30px;
+    box-shadow: rgb(237, 237, 237) 0 1px 3px;
+    border-radius: 20px;
+    font-size: 50px;
+    border: transparent;
+    color: white;
+ }
+
+.resume{
+    margin: 30px 0 0 0;
+}
+
+.resume a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(0, 208, 208);
+    border-radius: 20px;
+    padding: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    width: 300px;
+}
+
+.resume a:hover{
+    background-color: rgb(0, 171, 171);
+}
+
+.spanResume{
+    margin-left: 20px;
+}
+
+.resume-small{
+    display: none;
+}
+
+
+
+footer{
+    height: 10%;
+}
+
+
+
+/*Home-Index site*/
+.profile .display h4{
+    background-color: rgb(0, 208, 208);
+    padding: 25px;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    right: 0;
+}
+
+.profile .display h4:hover{
+    background-color: rgb(0, 171, 171);
+    transition-delay: 60ms;
+    color: rgb(237, 237, 237);
+}
+
+.profile h3{
+    padding: 20px;
+    font-size: 30px;
+}
+
+.profile img{
+    width: 400px;
+    border-radius: 50%;
+}
+
+.profile{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 3.5%;
+    width:90%;
+    background-color: rgb(40, 39, 50);
+    padding: 20px;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: rgb(51, 51, 59) 0 10px 15px;
+}
+
+
+
+.display p{
+    padding: 20px;
+}
+.profile-wlcm{
+    text-align: center;
+    gap: 20px;
+    margin-right: 60px;
+}
+
+.profile-wlcm h3{
+    background-color: rgb(45, 44, 58);
+    padding: 30px;
+    border-radius: 30px;
+    font-size: 30px;
+}
+
+.profile-wlcm h3:hover{
+    background-color: rgb(37, 37, 44);
+    animation: ease-in-out 2s;
+    transition-delay: 60ms;
+}
+
+::-webkit-scrollbar{
+    background-color: rgba(221, 4, 4, 0);
+    width: 10px;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgb(54, 52, 75);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(43, 39, 75);
+}
+
+
+/*nav Topics*/
+
+.nav-topics .nav-list{
+    display: flex;
+    background-color: rgb(37, 37, 44);
+    text-align: center;
+}
+
+.nav-topics .nav-list ul{
+    display: inline-flex;
+    gap: 5px;
+    list-style: none;
+    text-align: center;
+}
+
+.nav-topics .nav-list a{
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+    padding: 20px 40px;
+}
+
+.nav-list li:hover span{
+    background-color: rgb(48, 48, 49);
+    visibility: visible;
+}
+
+.nav-list a:hover{
+    background-color: rgb(48, 48, 49);
+    border-radius: 10px;
+    color: brown;
+}
+
+.nav-list span{
+    font-size: 12px;
+    position: relative;
+    float: left;
+    visibility: hidden;
+    margin-top: 10px;
+    margin-left: -5px;
+}
+
+
+
+@media screen and (max-width: 835px){
+
+    header .profile-rgt h2{
+        font-size: 20px;
+    }
+
+    header{
+        padding: 0 0 20px 0;
+    }
+
+    header .nav-cat li{
+        display: none;
+    }
+
+    header .nav-cat button{
+        display: block;
+    }
+    
+
+    header .nav-cat-smaller{
+        display: none;
+        background-color: rgb(30, 29, 39);
+        width: 80%;
+        position: absolute;
+        right: 10%;
+        text-align: center;
+        box-shadow: rgb(62, 62, 62) 0 1px 6px;
+        z-index: 1000;
+        min-height: fit-content;
+        position: fixed;
+    }
+
+    header .nav-cat-smaller a{
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+
+    header .nav-cat-smaller li{
+        padding: 20px;
+    }
+
+    header button{
+        background-color: brown;
+        margin-right: 10px;
+        padding: 15px;
+        border-radius: 10px;
+        border: 1px;
+        color: white;
+    }
+
+    header button label{
+        font-weight: bold;
+    }
+
+    main .topic-ctn .heroPage .name{
+        font-size: 30px;
+    }
+
+    main .topic-ctn .heroPage h1{
+        font-size: 20px;
+    }
+
+    main .topic-ctn .heroPage h2{
+        font-size: 15px;
+    }
+
+    main .topic-ctn .heroPage p{
+        font-size: 15px;
+    }
+
+    .overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.335);
+        backdrop-filter: blur(50px);
+        z-index: 999;/*Overlay stays below menu*/
+        display: none;
+    }
+    
+
+    #mainContent .topic-ctn{
+        max-width: 90%;
+        margin-left: 10%;
+        height: fit-content;
+    }
+
+    .heroPage .resume{
+        width: 100px;
+        display: none;
+    }
+
+    .heroPage .resume-small{
+        background-color: rgb(0, 208, 208);
+        padding: 20px 100px 20px 0;
+        align-items: center;
+        color: white;
+        display: block;
+        text-align: center;
+        border-radius: 20px;
+    }
+
+    .heroPage .resume-small:hover{
+        background-color: rgb(0, 171, 171);
+    }
+    
+    .heroPage .spanResume-small{
+        position: absolute;
+        font-weight: bold;
+        margin-left: 10px;
+        text-decoration: none;
+        z-index: 1;
+    }
+
+
+    .profile{
+        display: inline-block;
+    }
+    
+    .profile-wlcm{
+        margin: 0px;
+    }
+
+    .profile-wlcm img{
+        width: 250px;
+    }
+
+    ::-webkit-scrollbar{
+        display: none;
+    }
+
+    /*nav Topics*/
+
+    .nav-topics .nav-list a{
+        color: white;
+        text-decoration: none;
+        font-size: 22px;
+        padding: 20px 20px;
+    }
+
+    .nav-topics .nav-list a:hover{
+        color: brown;
+    }
+
+    .nav-list span{
+        font-size: 7px;
+    }
+    
+
+}

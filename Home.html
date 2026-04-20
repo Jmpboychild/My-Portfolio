@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Portfolio | Home</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"  />
+</head>
+<body>
+    <Header>
+        <ul>
+            <div class="profile-rgt" onclick="location.href='index.html'">
+                <img src="pot pic.jpg" alt="">
+                <h2>My Portfolio</h2>
+            </div>
+
+            <div class="nav-cat">
+                <li><a href="">About me</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Certificates</a></li>
+                <li><a href="">Social Handles</a></li>
+                <button type="button" onclick="openMyDetails()" id="detailsButton">
+                    <span><i class="fa-solid fa-list"></i></span>
+                    <label for="">My Details</label>
+                </button>
+            </div>
+        </ul>
+
+        <!--In smaller screens-->
+        <div class="overlay" id="myDetailsOverlay"></div>
+        <ul class="nav-cat-smaller" id="myDetails">
+            <li><a href="">About me</a></li><hr>
+            <li><a href="">Projects</a></li><hr>
+            <li><a href="">Certificates</a></li><hr>
+            <li><a href="">Social Handles</a></li>
+        </ul>
+    </Header>
+    <main id="mainContent">
+    <div class="main-content">
+        <div class="left-nav" id="sideNav">
+            <span onclick="closeNav()" class="side-nav">&times;</span>
+            <h2>About me</h2><hr>
+            
+            <ul>
+                <li class="intro"><a href="#introduction">Introduction</a></li><hr>
+                <li class="nation"><a href="#nationality">Nationality</a></li><hr>
+                <li class="edu"><a href="#education">Education</a></li><hr>
+                <li class="exp"><a href="#expertise">Expertise</a></li>
+            </ul>
+        </div>
+
+        <div class="left-nav-hidden" id="sideNavOpen">
+            <div class="about" onclick="openSideNav()">
+                <i class="fa-solid fa-circle-info"></i>
+                <span class="open-about"><i class="fa-solid fa-caret-right"></i></span>
+            </div>
+            <ul>
+                <li class="intro-i"><i class="fa-solid fa-person-through-window" id="intro-i" onclick="location.href='#introduction'"></i></li>
+                <h3 class="intro-iDet">Introduction</h3>
+
+                <li class="nation-i"><i class="fa-solid fa-map-location-dot" id="nation-i" onclick="location.href='#nationality'"></i></li>
+                <h3 class="nation-iDet">Nationality</h3>
+
+                <li class="edu-i"><i class="fa-solid fa-user-graduate" id="edu-i" onclick="location.href='#education'"></i></li>
+                <h3 class="edu-iDet">Education</h3>
+                
+                <li class="exp-i"><i class="fa-solid fa-briefcase" id="exp-i" onclick="location.href='#expertise'"></i></li>
+                <h3 class="exp-iDet">Experience</h3>
+            </ul>
+        </div>
+
+
+        <!--The Topics-->
+
+       <br> <div class="topic-ctn">
+                <div class="heroPage" >
+                    <h1 class="name">Jason Mshila Mwasho</h1><br>
+                    <h2>A Computer Technology student</h2>
+               
+                    <h1>Aspiring Network Engineer & Web Developer</h1><br><br>
+                    <div class="resume">
+                        <a href="files/Jason mwasho CV.pdf" download="Jason Mwasho-Resume" class="fa-solid fa-download">
+                            <span class="spanResume">Get My resume</span>
+                        </a>
+                    </div>
+                    <div class="resume-small">
+                        <a href="files/Jason mwasho CV.pdf" download="Jason Mwasho-Resume" class="fa-solid fa-download">
+                            <span class="spanResume-small">Get My resume</span>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="nav-topics"><hr>
+                    <div class="nav-list">
+                        <ul>
+                            <li><a href="#introduction" class="fa-solid fa-person-through-window"><span>Introduction</span></a></li>
+                            <li><a href="#nationality" class="fa-solid fa-map-location-dot"><span>Nationality</span></a></li>
+                            <li><a href="#education" class="fa-solid fa-user-graduate"><span>Education</span></a></li>
+                            <li><a href="#expertise" class="fa-solid fa-briefcase"><span>Expertise</span></a></li>
+                        </ul>
+                    </div><hr>
+                    <div class="nav-list-content">
+                            <p>I build reliable networks and simple, efficient web applications.
+                             Passionate about solving real-world tech problems <br>
+                             Get to know more about me...</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+    </div>
+    </main>
+
+    <script src="index.js"></script>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
