@@ -27,3 +27,36 @@ document.addEventListener('click', (event) =>{
         myDetailsOverlay.style.display = 'none';
     }
 });
+
+
+//Content navigation
+const introButton = document.getElementById('introBtn');
+const nationButton = document.getElementById('nationBtn');
+const educationButton = document.getElementById('eduBtn');
+const expertiseButton = document.getElementById('expertBtn');
+
+const intro = document.getElementById('introContent');
+const nation = document.getElementById('nationContent');
+const education = document.getElementById('educationContent');
+const expertise = document.getElementById('expetiseContent')
+
+introButton.addEventListener('click', (event)=> {
+    intro.style.display = 'block';
+    nation.style.display = 'none';
+    education.style.display = 'none';
+    expertise.style.display = 'none';
+});
+
+nationButton.addEventListener('click', (event)=> {
+    intro.style.display = 'none';
+    nation.style.display = 'block';
+    education.style.display = 'none';
+    expertise.style.display = 'none';
+});
+
+educationButton.addEventListener('click', (event)=> {
+    intro.style.display = 'none';
+    nation.style.display = 'none';
+    education.style.display = 'block';
+    expertise.style.display = 'none';
+});

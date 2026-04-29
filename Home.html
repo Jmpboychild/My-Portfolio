@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My-Portfolio | Home</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
 </head>
+
 <body>
     <Header>
         <ul>
-            <div class="profile-rgt" onclick="location.href='index.html'">
-                <img src="pot pic.jpg" alt="">
+            <div class="profile-rgt" ef='index.html'">
+                <img src=" pot pic.jpg" alt="">
                 <h2>My Portfolio</h2>
             </div>
 
@@ -20,7 +22,7 @@
                 <li><a href="">Projects</a></li>
                 <li><a href="">Certificates</a></li>
                 <li><a href="">Social Handles</a></li>
-                <button type="button" onclick="openMyDetails()" id="detailsButton">
+                <button type="button" ls()" id="detailsButton">
                     <span><i class="fa-solid fa-list"></i></span>
                     <label for="">My Details</label>
                 </button>
@@ -30,54 +32,62 @@
         <!--In smaller screens-->
         <div class="overlay" id="myDetailsOverlay"></div>
         <ul class="nav-cat-smaller" id="myDetails">
-            <li><a href="">About me</a></li><hr>
-            <li><a href="">Projects</a></li><hr>
-            <li><a href="">Certificates</a></li><hr>
+            <li><a href="">About me</a></li>
+            <hr>
+            <li><a href="">Projects</a></li>
+            <hr>
+            <li><a href="">Certificates</a></li>
+            <hr>
             <li><a href="">Social Handles</a></li>
         </ul>
     </Header>
     <main id="mainContent">
-    <div class="main-content">
-        <div class="left-nav" id="sideNav">
-            <span onclick="closeNav()" class="side-nav">&times;</span>
-            <h2>About me</h2><hr>
-            
-            <ul>
-                <li class="intro"><a href="#introduction">Introduction</a></li><hr>
-                <li class="nation"><a href="#nationality">Nationality</a></li><hr>
-                <li class="edu"><a href="#education">Education</a></li><hr>
-                <li class="exp"><a href="#expertise">Expertise</a></li>
-            </ul>
-        </div>
+        <div class="main-content">
+            <div class="left-nav" id="sideNav">
+                <span class="side-nav">&times;</span>
+                <h2>About me</h2>
+                <hr>
 
-        <div class="left-nav-hidden" id="sideNavOpen">
-            <div class="about" onclick="openSideNav()">
-                <i class="fa-solid fa-circle-info"></i>
-                <span class="open-about"><i class="fa-solid fa-caret-right"></i></span>
+                <ul>
+                    <li class="intro"><a href="#introduction">Introduction</a></li>
+                    <hr>
+                    <li class="nation"><a href="#nationality">Nationality</a></li>
+                    <hr>
+                    <li class="edu"><a href="#education">Education</a></li>
+                    <hr>
+                    <li class="exp"><a href="#expertise">Expertise</a></li>
+                </ul>
             </div>
-            <ul>
-                <li class="intro-i"><i class="fa-solid fa-person-through-window" id="intro-i" onclick="location.href='#introduction'"></i></li>
-                <h3 class="intro-iDet">Introduction</h3>
 
-                <li class="nation-i"><i class="fa-solid fa-map-location-dot" id="nation-i" onclick="location.href='#nationality'"></i></li>
-                <h3 class="nation-iDet">Nationality</h3>
+            <div class="left-nav-hidden" id="sideNavOpen">
+                <div class="about">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span class="open-about"><i class="fa-solid fa-caret-right"></i></span>
+                </div>
+                <ul>
+                    <li class="intro-i"><i class="fa-solid fa-person-through-window" id="intro-i" ef='#introduction'"></i></li>
+                <h3 class=" intro-iDet">Introduction</h3>
 
-                <li class="edu-i"><i class="fa-solid fa-user-graduate" id="edu-i" onclick="location.href='#education'"></i></li>
-                <h3 class="edu-iDet">Education</h3>
-                
-                <li class="exp-i"><i class="fa-solid fa-briefcase" id="exp-i" onclick="location.href='#expertise'"></i></li>
-                <h3 class="exp-iDet">Experience</h3>
-            </ul>
-        </div>
+                    <li class="nation-i"><i class="fa-solid fa-map-location-dot" id="nation-i" ef='#nationality'"></i></li>
+                <h3 class=" nation-iDet">Nationality</h3>
+
+                    <li class="edu-i"><i class="fa-solid fa-user-graduate" id="edu-i" ef='#education'"></i></li>
+                <h3 class=" edu-iDet">Education</h3>
+
+                    <li class="exp-i"><i class="fa-solid fa-briefcase" id="exp-i" ef='#expertise'"></i></li>
+                <h3 class=" exp-iDet">Experience</h3>
+                </ul>
+            </div>
 
 
-        <!--The Topics-->
+            <!--The Topics-->
 
-       <br> <div class="topic-ctn">
-                <div class="heroPage" >
+            <br>
+            <div class="topic-ctn">
+                <div class="heroPage">
                     <h1 class="name">Jason Mshila Mwasho</h1><br>
                     <h2>A Computer Technology student</h2>
-               
+
                     <h1>Aspiring Network Engineer & Web Developer</h1><br><br>
                     <div class="resume">
                         <a href="files/Jason mwasho CV.pdf" download="Jason Mwasho-Resume" class="fa-solid fa-download">
@@ -91,20 +101,80 @@
                     </div>
                 </div>
 
-
-                <div class="nav-topics"><hr>
+                <!--navigate sub-topics-->
+                <div class="nav-topics">
+                    <hr>
                     <div class="nav-list">
                         <ul>
-                            <li><a href="#introduction" class="fa-solid fa-person-through-window"><span>Introduction</span></a></li>
-                            <li><a href="#nationality" class="fa-solid fa-map-location-dot"><span>Nationality</span></a></li>
-                            <li><a href="#education" class="fa-solid fa-user-graduate"><span>Education</span></a></li>
-                            <li><a href="#expertise" class="fa-solid fa-briefcase"><span>Expertise</span></a></li>
+                            <li><a href="#introContent" class="fa-solid fa-person-through-window"
+                                    id="introBtn"><span>Introduction</span></a></li>
+                            <li><a href="#nationContent" class="fa-solid fa-map-location-dot"
+                                    id="nationBtn"><span>Nationality</span></a></li>
+                            <li><a href="#educationContent" class="fa-solid fa-user-graduate"
+                                    id="eduBtn"><span>Education</span></a></li>
+                            <li><a href="#expertiseContent" class="fa-solid fa-briefcase"
+                                    id="expertBtn"><span>Expertise</span></a></li>
                         </ul>
-                    </div><hr>
+                    </div>
+                    <hr>
                     <div class="nav-list-content">
-                            <p>I build reliable networks and simple, efficient web applications.
-                             Passionate about solving real-world tech problems <br>
-                             Get to know more about me...</p>
+                        <div class="intro" id="introContent">
+                            <h3>I am a Junior <span style="color: red;">Network Administrator</span> and an competive
+                                <span style="color: blue;">Web
+                                    Designer.</span>
+                            </h3> <br>
+                            <ul>
+                                <li>I build reliable Networks from smaller LAN networks upscale. I have designed several
+                                    home-lab networks that can be implemented in real life scenarios.</li>
+                                <li>I design web pages, with basic HTML5, CSS and response with javascript. I also have
+                                    wide knowledge regarding other frameworks and also other web building languages.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="intro" id="nationContent">
+                            <div style="display: inline-flex; align-items: center; gap: 5px;">
+                                <h2><span class="fa-solid fa-location"></span>Nairobi,</h2>
+                                <h1>Kenya</h1>
+                            </div>
+                        </div>
+                        <div class="intro" id="educationContent">
+                            <div class="tables">
+                                <table border="solid black 1">
+                                    <tr>
+                                        <th>Education Level</th>
+                                        <th>Progress</th>
+                                    </tr>
+
+                                    <tr class="tr1">
+                                        <td rowspan="1">Junior</td>
+                                        <td>✅</td>
+                                    </tr>
+                                    <tr class="tr2">
+                                        <td>Senior</td>
+                                        <td>✅</td>
+                                    </tr>
+                                    <tr class="tr1">
+                                        <td rowspan="2">Under-Graduate</td>
+                                        <td>In progress... <br>
+                                            <div class="mmu">(At Multimedia University of Kenya)</div>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </div>
+
+                        </div>
+                        <div class="intro" id="expertiseContent">
+                            <div class="navigate">
+                                <div class="selector">
+                                    <ul>
+                                        <li>Web Development</li>
+
+                                        <li>Network Administration</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -113,7 +183,8 @@
 
 
 
-    </div>
+
+        </div>
     </main>
 
     <script src="index.js"></script>
@@ -121,7 +192,13 @@
     <footer>
 
     </footer>
+    <div style="--useWiderScreen: 'Use Wider Screen To View Content!'" class="widerScreen">
+        <div class="h1">
+            <h2 class="h2">Content viewable on wider screen!</h2>
+        </div>
+    </div>
 </body>
+
 </html>
 
 
