@@ -419,6 +419,7 @@ footer{
 .nav-list-content .intro ul{
     list-style-type: style;
     margin: 0 10%;
+    text-align: left;
 }
 
 .nav-list-content .intro li{
@@ -485,30 +486,7 @@ table td{
     display: block;
 }
 
-#expertiseContent .navigate{
-    text-align: center;
-    display: flex;
-}
 
-#expertiseContent .selector{
-    background-color: rgb(40, 39, 50);
-    display: flex;
-}
-
-#expertiseContent .navigate ul{
-    list-style: none;
-    position: relative;
-}
-
-#expertiseContent .navigate ul li{
-    padding: 10px;
-    margin-block-end: 0;
-    color: rgb(0, 171, 171);
-}
-
-#expertiseContent .navigate ul li:hover{
-    color: white;
-}
 
 
 /*smallest screen*/
